@@ -11,25 +11,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <style>
-        .navbar-nav p, .navbar-nav i{
+        .navbar-nav p,
+        .navbar-nav i {
             border-bottom: solid 5px transparent;
             border-top: solid 10px transparent;
             transition: ease-in-out 0.3s;
         }
-        .navbar-nav .active{
+
+        .navbar-nav .active {
             color: #80CC28 !important;
         }
-        .navbar-nav a p:hover{
+
+        .navbar-nav a:hover p {
             transition: ease-in-out 0.3s;
             border-bottom: solid 5px #80CC28;
         }
 
-        .nav2 a{
+        .nav2 {
             transition: transform 0.3s;
         }
-        .nav2 a:hover{
+
+        .nav2:hover {
             transition: transform 0.3s;
             transform: scale(1.1);
+        }
+
+        .w-49 {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 1025px) {
+            .w-49 {
+                width: 49%;
+            }
+        }
+
+        .hero a {
+            transition: ease-in-out 0.3s;
+        }
+
+        .hero a:hover {
+            transform: scale(1.05);
+            transition: ease-in-out 0.3s;
         }
     </style>
 </head>
@@ -43,16 +66,40 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav mx-auto gap-xl-2">
-                    <a class="nav-link active d-flex gap-2" href="#"><i class="bi bi-house-door"></i><p class="mb-0">Home</p></a>
-                    <a class="nav-link d-flex gap-2" href="#"><i class="bi bi-lightbulb"></i><p class="mb-0">Challenges</p></a>
-                    <a class="nav-link d-flex gap-2" href="#"><i class="bi bi-gift"></i><p class="mb-0">Reward</p></a>
-                    <a class="nav-link d-flex gap-2" href="#"><i class="bi bi-book"></i><p class="mb-0">Learn</p></a>
-                    <a class="nav-link d-flex gap-2" href="#"><i class="bi bi-people"></i><p class="mb-0">Community</p></a>
+                    <a class="nav-link active d-flex gap-2" href="#"><i class="bi bi-house-door"></i>
+                        <p class="mb-0">Home</p>
+                    </a>
+                    <a class="nav-link d-flex gap-2" href="#"><i class="bi bi-lightbulb"></i>
+                        <p class="mb-0">Challenges</p>
+                    </a>
+                    <a class="nav-link d-flex gap-2" href="#"><i class="bi bi-gift"></i>
+                        <p class="mb-0">Reward</p>
+                    </a>
+                    <a class="nav-link d-flex gap-2" href="#"><i class="bi bi-book"></i>
+                        <p class="mb-0">Learn</p>
+                    </a>
+                    <a class="nav-link d-flex gap-2" href="#"><i class="bi bi-people"></i>
+                        <p class="mb-0">Community</p>
+                    </a>
                 </div>
-                <div class="d-flex align-items-center ms-auto gap-2 nav2">
-                    <a href="#" class="btn border-0 rounded px-4 text-white" style="background-color: #15C626;">Login</a>
-                    <a href="#" class="btn border-0 rounded px-4" style="background-color: #F9F871;">Register</a>
+                <div class="d-flex align-items-center ms-auto gap-2">
+                    <!-- <a href="#" class="btn nav2 border-0 rounded px-4 text-white" style="background-color: #15C626;">Login</a>
+                    <a href="#" class="btn nav2 border-0 rounded px-4" style="background-color: #F9F871;">Sign In</a> -->
+                    <div class="dropdown">
+                        <a role="button" class="dropdown-toggle text-dark d-flex align-items-center text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="" class="rounded-circle" style="width: 10px;" alt="">
+                            <p class="mb-0">Account Name</p>
+                            <!-- <i class="bi bi-caret-down-fill"></i> -->
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark bg-danger p-0">
+                            <li class="text-center text-white"><a class="dropdown-item" href="#">Log Out</a></li>
+                        </ul>
+                    </div>
+                    <?php if (session()->get('login') == true) : ?>
+
+                    <?php endif; ?>
                 </div>
+
             </div>
         </div>
     </nav>
