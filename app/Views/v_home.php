@@ -2,7 +2,18 @@
     <div class="container d-flex flex-column gap-5">
         <div class="row">
             <div class="col-12">
-                <h1 class="display-3 fw-bold text-center text-dark">Hello, Good Morning</h1>
+                <h1 class="display-3 fw-bold text-center text-dark">Hello, Good
+                    <?php
+                    $todeh = date('G');
+                    if ($todeh >= 4 and $todeh <= 10) {
+                        echo 'Morning';
+                    } elseif ($todeh > 10 and $todeh <= 17) {
+                        echo 'Afternoon';
+                    } elseif (($todeh > 17 and $todeh <= 23) || ($todeh >= 0 and $todeh < 4)) {
+                        echo 'Evening';
+                    }
+                    ?>
+                </h1>
             </div>
         </div>
         <div class="row align-items-stretch justify-content-between hero gap-5 gap-xl-0">
@@ -10,13 +21,14 @@
                 <div class="rounded p-4 shadow-lg" style="background-color: #E1E1E1; height: 100%;">
                     <h5>Average Today's Air <br>Quality</h5>
                     <h5 class="fw-bold">124 AQI</h5>
+                    <canvas id="chartaqi"></canvas>
                 </div>
             </a>
             <a href="#" class="col-12 col-lg-5 text-dark text-decoration-none">
-                <div class="rounded p-4 shadow-lg" style="background-color: #E1E1E1; height: 100%;">
+                <div class="rounded p-4 shadow-lg d-flex flex-column" style="background-color: #E1E1E1; height: 100%;">
                     <span class="d-flex">
                         <p class="fw-bold mb-1">Jakarta, Indonesia</p>
-                        <p class="ms-auto mb-1">05.00 PM</p>
+                        <p class="ms-auto mb-1 fw-bold">05.00 PM</p>
                     </span>
                     <p>15 June 2023</p>
                     <div class="mt-auto">
@@ -40,11 +52,11 @@
                 <h1 class="fw-bold text-center">Temperature</h1>
                 <h1 class="display-4 fw-bold text-center">35°C</h1>
                 <div class="py-5 px-4 d-flex justify-content-around rounded" style="background-color: #D8D8D8;">
-                    <?php for($n=1;$n<=3;$n++): ?>
+                    <?php for ($n = 1; $n <= 3; $n++) : ?>
                         <div class="d-flex flex-column align-items-center fw-bolder">
                             <h4 class="mb-4">PM2.5</h4>
                             <h1 class="display-3">31</h1>
-                       </div>
+                        </div>
                     <?php endfor; ?>
                 </div>
             </div>
