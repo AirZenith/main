@@ -30,6 +30,7 @@ class User extends Migration
             'points'      => [
                 'type'           => 'int',
             ],
+            'created_at DATETIME DEFAULT CURRENT_TIMESTAMP'
         ]);
 
         $this->forge->addKey('user_id', TRUE);
