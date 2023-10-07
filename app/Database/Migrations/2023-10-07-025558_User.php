@@ -32,7 +32,7 @@ class User extends Migration
             ],
         ]);
 
-        $this->forge->addKey('id', TRUE);
+        $this->forge->addKey('user_id', TRUE);
         $this->forge->createTable('user', TRUE);
     }
 
