@@ -46,7 +46,7 @@ class Home extends BaseController
      */
     public function getCityAQI(String $city_name = 'here'): int
     {
-        $data = $this->getWAQI()['aqi'];
+        $data = $this->getWAQI($city_name)['aqi'];
 
         return $data;
     }
@@ -56,7 +56,7 @@ class Home extends BaseController
      */
     public function getDomPol(String $city_name = 'here'): string
     {
-        $data = $this->getWAQI()['dominentpol'];
+        $data = $this->getWAQI($city_name)['dominentpol'];
 
         return $data;
     }
@@ -66,7 +66,7 @@ class Home extends BaseController
      */
     public function getPol(String $city_name = 'here')
     {
-        $data = $this->getWAQI()['iaqi'];
+        $data = $this->getWAQI($city_name)['iaqi'];
 
         return $data;
     }
@@ -74,13 +74,13 @@ class Home extends BaseController
     /**
      * Fetch polutant forecast between 2 days before and 2 days after today from WAQI json file
      */
-    public function getForecast(String $particle_type = null)
+    public function getForecast(String $particle_type = null, $city_name = 'here')
     {
-        $data = $this->getWAQI()['forecast']['daily'];
+        $data = $this->getWAQI($city_name)['forecast']['daily'];
 
         if ($particle_type !== null) {
             try {
-                $data = $this->getWAQI()['forecast']['daily'][$particle_type];
+                $data = $this->getWAQI($city_name)['forecast']['daily'][$particle_type];
             } catch (\Throwable $th) {
                 return "Particle must be between o3, pm10, and pm25";
             }
