@@ -20,8 +20,8 @@ After that, you can run `composer update` to install the vendor folders
 
 1.  Copy `env` to `.env` and tailor for your app, specifically the baseURL
 and any database settings.
-2. Create a WAQI api key from [aqicn.org](https://aqicn.org/data-platform/token/) and replace `YOUR_API_KEY` in .env file with your api key.
-3. Create a WeatherAPI api key from [WeatherAPI.com](https://www.weatherapi.com/signup.aspx) and replace `YOUR_API_KEY` in .env file with your api key.
+2. Create a WAQI api key from [aqicn.org](https://aqicn.org/data-platform/token/) and replace `YOUR_API_KEY` in `.env` file with your api key.
+3. Create a WeatherAPI api key from [WeatherAPI.com](https://www.weatherapi.com/signup.aspx) and replace `YOUR_API_KEY` in `.env` file with your api key.
 
 ## Server Requirements
 
