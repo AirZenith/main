@@ -6,9 +6,6 @@ use CodeIgniter\Config\DotEnv;
 
 class Home extends BaseController
 {
-<<<<<<< HEAD
-    public function index()
-=======
     private $token;
 
     public function initController(\CodeIgniter\HTTP\RequestInterface $request, \CodeIgniter\HTTP\ResponseInterface $response, \Psr\Log\LoggerInterface $logger)
@@ -18,8 +15,7 @@ class Home extends BaseController
         $this->token = getenv('API_KEY');
     }
 
-    public function index(): string
->>>>>>> 23f37b36481c590a07a1cfe9c6e9790a113db12f
+    public function index()
     {
         echo view('navbar');
         echo view('v_home');
