@@ -11,14 +11,11 @@
     },
     "require": {
         "php": "^7.4 || ^8.0",
-<<<<<<< HEAD
-        "codeigniter4/framework": "^4.4"
-=======
         "azuyalabs/waqi": "^1.2",
-        "codeigniter4/framework": "^4.0",
+        "codeigniter4/framework": "^4.4",
         "vlucas/phpdotenv": "^5.5",
         "waqidevs/waqi-php-client": "^2.0"
->>>>>>> 23f37b36481c590a07a1cfe9c6e9790a113db12f
+
     },
     "require-dev": {
         "fakerphp/faker": "^1.9",
