@@ -15,9 +15,12 @@ class Home extends BaseController
         $this->token = getenv('API_KEY');
     }
 
-    public function index(): string
+    public function index()
+
     {
-        return view('welcome_message');
+        echo view('navbar');
+        echo view('v_home');
+        echo view('bottom');
     }
 
     /**
