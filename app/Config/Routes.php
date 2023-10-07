@@ -11,8 +11,8 @@ $routes->add('register', 'UserController::register', ['filter' => 'noAuth']);
 
 $routes->post('logout', 'UserController::logout', ['filter' => 'noAuth']);
 
-$routes->get('waqi', 'Home::getWAQI');
-$routes->get('aqi', 'Home::getCityAQI');
-$routes->get('dominant-polutant', 'Home::getDomPol');
-$routes->get('polutant', 'Home::getPol');
-$routes->get('forecast', 'Home::getForecast');
+$routes->get('waqi', 'AqiController::getWAQI');
+$routes->get('aqi', 'AqiController::getCityAQI');
+$routes->get('dominant-polutant', 'AqiController::getDomPol');
+$routes->get('polutant', 'AqiController::getPol');
+$routes->get('forecast', 'AqiController::getForecast');
