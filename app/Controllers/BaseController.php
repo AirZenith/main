@@ -46,6 +46,14 @@ abstract class BaseController extends Controller
     /**
      * @return void
      */
+    public function url()
+    {
+        $directoryURI = $_SERVER['REQUEST_URI'];
+        $path = parse_url($directoryURI, PHP_URL_PATH);
+        $components = explode('/', $path);
+        return $components[1];
+    }
+    
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
         // Do Not Edit This Line
