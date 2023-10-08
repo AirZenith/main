@@ -7,10 +7,9 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('/', 'Home::index');
-$routes->add('/login', 'UserController::login', ['filter' => 'noAuth']);
-$routes->add('/register', 'UserController::register', ['filter' => 'noAuth']);
-
-$routes->post('/logout', 'UserController::logout', ['filter' => 'noAuth']);
+$routes->add('/login', 'UserController::login', ['filter' => 'noauth']);
+$routes->add('/register', 'UserController::register', ['filter' => 'noauth']);
+$routes->post('/logout', 'UserController::logout', ['filter' => 'auth']);
 
 $routes->get('/waqi', 'AqiController::getWAQI');
 $routes->get('/aqi', 'AqiController::getCityAQI');
