@@ -7,17 +7,21 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('/', 'Home::index');
-$routes->add('login', 'UserController::login', ['filter' => 'noAuth']);
-$routes->add('register', 'UserController::register', ['filter' => 'noAuth']);
+$routes->add('/login', 'UserController::login', ['filter' => 'noAuth']);
+$routes->add('/register', 'UserController::register', ['filter' => 'noAuth']);
 
-$routes->post('logout', 'UserController::logout', ['filter' => 'noAuth']);
+$routes->post('/logout', 'UserController::logout', ['filter' => 'noAuth']);
 
-$routes->get('waqi', 'AqiController::getWAQI');
-$routes->get('aqi', 'AqiController::getCityAQI');
-$routes->get('dominant-polutant', 'AqiController::getDomPol');
-$routes->get('polutant', 'AqiController::getPol');
-$routes->get('polutant-forecast', 'AqiController::getPolForecast');
+$routes->get('/waqi', 'AqiController::getWAQI');
+$routes->get('/aqi', 'AqiController::getCityAQI');
+$routes->get('/dominant-polutant', 'AqiController::getDomPol');
+$routes->get('/polutant', 'AqiController::getPol');
+$routes->get('/polutant-forecast', 'AqiController::getPolForecast');
 
 $routes->get('/current-location', 'AqiController::getCurrentLocation');
 $routes->get('/temp', 'AqiController::getCurrentTemp');
 $routes->get('/weather-forecast', 'AqiController::getForecast');
+
+$routes->group('test', function ($routes) {
+    $routes->get('me', 'AqiController::getCurrentLocation');
+});
