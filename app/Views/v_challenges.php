@@ -36,18 +36,8 @@
                                 <div class="d-flex mt-auto">
                                     <a href="#" class="btn border-0 rounded text-white" style="background-color: #15C626;">Do This Challenge</a>
                                 </div>
-                                <!-- <div class="d-flex align-items-center mt-auto">
-                                    <div>
-                                        <i class="bi bi-flower"></i>!
-                                        <p class="mb-0">+500 Zen Point</p>
-                                    </div>
-                                    <div class="ms-auto">
-                                        <a href="#" class="btn border-0 rounded text-white" style="background-color: #15C626;">Do This Challenge</a>
-                                    </div>
-                                    </d>
-                                </div> -->
                             </div>
-
+                            
                         </div>
                     </div>
                 </div>
