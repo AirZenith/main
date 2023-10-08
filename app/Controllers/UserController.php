@@ -89,7 +89,7 @@ class UserController extends BaseController
         $model->save($newData);
         $session = session();
         $session->setFlashdata('success', 'Successful Registration');
-      
+        
         echo view('top');
         echo view('v_register');
         echo view('bottom');

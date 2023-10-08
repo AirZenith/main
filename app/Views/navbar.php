@@ -6,19 +6,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav mx-auto gap-xl-2">
-                <a class="nav-link d-flex gap-2 <?= ($url == "") ? "active" : ''; ?>" href="#"><i class="bi bi-house-door"></i>
+                <a class="nav-link d-flex gap-2 <?= ($url == "") ? "active" : ''; ?>" href="<?= base_url(); ?>"><i class="bi bi-house-door"></i>
                     <p class="mb-0">Home</p>
                 </a>
-                <a class="nav-link d-flex gap-2 <?= ($url == "challenges") ? "active" : ''; ?>" href="#"><i class="bi bi-lightbulb"></i>
+                <a class="nav-link d-flex gap-2 <?= ($url == "challenges") ? "active" : ''; ?>" href="<?= base_url('/challenges'); ?>"><i class="bi bi-lightbulb"></i>
                     <p class="mb-0">Challenges</p>
                 </a>
-                <a class="nav-link d-flex gap-2 <?= ($url == "reward") ? "active" : ''; ?>" href="#"><i class="bi bi-gift"></i>
+                <a class="nav-link d-flex gap-2 <?= ($url == "reward") ? "active" : ''; ?>" href="<?= base_url('/reward'); ?>"><i class="bi bi-gift"></i>
                     <p class="mb-0">Reward</p>
                 </a>
-                <a class="nav-link d-flex gap-2 <?= ($url == "learn") ? "active" : ''; ?>" href="#"><i class="bi bi-book"></i>
+                <a class="nav-link d-flex gap-2 <?= ($url == "learn") ? "active" : ''; ?>" href="<?= base_url('/learn'); ?>"><i class="bi bi-book"></i>
                     <p class="mb-0">Learn</p>
                 </a>
-                <a class="nav-link d-flex gap-2 <?= ($url == "community") ? "active" : ''; ?>" href="#"><i class="bi bi-people"></i>
+                <a class="nav-link d-flex gap-2 <?= ($url == "community") ? "active" : ''; ?>" href="<?= base_url('/community'); ?>"><i class="bi bi-people"></i>
                     <p class="mb-0">Community</p>
                 </a>
             </div>
