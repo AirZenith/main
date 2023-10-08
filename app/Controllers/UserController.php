@@ -34,12 +34,16 @@ class UserController extends BaseController
         }
 
         $model = new UserModel();
-
+      
         $user = $model->where('username', $this->request->getVar('username'))
             ->first();
 
         // Storing session values
         $this->setUserSession($user);
+      
+        echo view('top');
+        echo view('v_login');
+        echo view('bottom');
     }
 
     private function setUserSession($user)
@@ -62,7 +66,7 @@ class UserController extends BaseController
         if ($this->request->getMethod() != 'post') {
             return view('register', $data);
         }
-
+      
         $rules = [
             'username' => 'required|min_length[3]|max_length[20]|is_unique[user.username]',
             'password' => 'required|min_length[8]|max_length[255]',
@@ -85,7 +89,10 @@ class UserController extends BaseController
         $model->save($newData);
         $session = session();
         $session->setFlashdata('success', 'Successful Registration');
-        return redirect()->to(base_url('login'));
+      
+        echo view('top');
+        echo view('v_register');
+        echo view('bottom');
     }
 
     public function logout()

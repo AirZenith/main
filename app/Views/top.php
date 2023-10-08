@@ -40,12 +40,6 @@
             width: 100%;
         }
 
-        @media screen and (min-width: 1025px) {
-            .w-49 {
-                width: 49%;
-            }
-        }
-
         .hero a {
             transition: ease-in-out 0.3s;
         }
@@ -53,6 +47,30 @@
         .hero a:hover {
             transform: scale(1.05);
             transition: ease-in-out 0.3s;
+        }
+
+        .legend {
+            background-color: white;
+        }
+
+        .lebeng {
+            font-size: 90%;
+        }
+
+        @media screen and (min-width: 1025px) {
+            .w-49 {
+                width: 49%;
+            }
+        }
+
+        @media screen and (min-width:1024px) {
+            .legend {
+                background-color: #D8D8D8;
+            }
+
+            .lebeng {
+                font-size: 100%;
+            }
         }
     </style>
 </head>
