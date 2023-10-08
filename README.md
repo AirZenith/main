@@ -4,16 +4,12 @@
 
 AirZenith is an air quality monitoring application that aims to provide information about air quality index and greenhouse gas emissions, as well as promote a healthy lifestyle to users by giving them prizes every time they complete the available challenges.
 
-This app was made in Codeigniter 4 framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
-
-The user guide corresponding to the latest version of the framework can be found
+This app was made in [Codeigniter 4 framework](https://github.com/codeigniter4/CodeIgniter4). The user guide corresponding to the latest version of the framework can be found
 [here](https://codeigniter4.github.io/userguide/).
 
 ## Installation & updates
 
-click the green code button on the top left and download it.
+click the green code button on the top right and download it they way you want.
 After that, you can run `composer update` to install the vendor folders
 
 ## Setup
