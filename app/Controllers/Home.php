@@ -41,7 +41,7 @@ class Home extends BaseController
         $link['url'] = $this->url();
         echo view('top');
         echo view('navbar', $link);
-        echo view('v_challenges');
+        echo view('v_reward');
         echo view('footer', $link);
         echo view('bottom');
     }
