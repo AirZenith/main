@@ -1,34 +1,32 @@
 <footer class="pt-4" style="background-color: #50A83A; margin-top: 15vh;">
     <div class="container pt-5 pb-3">
-        <div class="row">
-            <div class="d-flex justify-content-between align-items-baseline">
-                <img src="img/Logo2.png" style="height: 35%;" class="img-fluid" alt="">
-                <div class="d-flex gap-5">
-                    <a href="#" class="text-white text-decoration-none">Home</a>
-                    <a href="#" class="text-white text-decoration-none">Challenge</a>
-                    <a href="#" class="text-white text-decoration-none">Reward</a>
-                    <a href="#" class="text-white text-decoration-none">Learn</a>
-                    <a href="#" class="text-white text-decoration-none">Community</a>
-                </div>
-                <div class="d-flex gap-3">
-                    <a href="#" class="btn rounded-circle btn-warning text-white p-2">
-                        <h5 class="mb-0"><i class="bi bi-google"></i></h5>
-                    </a>
-                    <a href="#" class="btn rounded-circle btn-dark p-2">
-                        <h5 class="mb-0"><i class="bi bi-github"></i></h5>
-                    </a>
-                    <a href="#" class="btn rounded-circle btn-danger p-2">
-                        <h5 class="mb-0"><i class="bi bi-instagram"></i></h5>
-                    </a>
-                    <a href="#" class="btn rounded-circle btn-primary p-2">
-                        <h5 class="mb-0"><i class="bi bi-facebook"></i></h5>
-                    </a>
-                </div>
+        <div class="row justify-content-between align-items-center gap-4 gap-lg-0">
+            <a href="#" class="d-flex col-lg-2 col-12 justify-content-center"><img src="img/Logo2.png" class="img-fluid pb-2" alt="" style="width: 205px;"></a>
+            <div class="d-flex gap-5 col-lg-6 col-12 flex-lg-row flex-column text-center ms-auto">
+                <a href="#" class="<?= ($url == "") ? 'text-decoration-underline' : 'text-decoration-none' ; ?> text-white">Home</a>
+                <a href="#" class="<?= ($url == "challenge") ? 'text-decoration-underline' : 'text-decoration-none' ; ?> text-white">Challenge</a>
+                <a href="#" class="<?= ($url == "reward") ? 'text-decoration-underline' : 'text-decoration-none' ; ?> text-white">Reward</a>
+                <a href="#" class="<?= ($url == "learn") ? 'text-decoration-underline' : 'text-decoration-none' ; ?> text-white">Learn</a>
+                <a href="#" class="<?= ($url == "community") ? 'text-decoration-underline' : 'text-decoration-none' ; ?> text-white">Community</a>
             </div>
-            <span class="d-flex justify-content-center w-100 mb-5"><span class="bg-white border-2 border" style="border-color: white !important; width: 80%;"></span></span>
-            <span class="d-flex justify-content-center mt-5">
-                <p class="text-white">&copy; Copyright <?= date('Y'); ?>, All Rights Reserved by AirZenith</p>
-            </span>
+            <div class="d-flex gap-3 col-lg-3 col-12 justify-content-center">
+                <a href="#" class="btn rounded-circle btn-warning text-white p-2">
+                    <h5 class="mb-0"><i class="bi bi-google"></i></h5>
+                </a>
+                <a href="#" class="btn rounded-circle btn-dark p-2">
+                    <h5 class="mb-0"><i class="bi bi-github"></i></h5>
+                </a>
+                <a href="#" class="btn rounded-circle btn-danger p-2">
+                    <h5 class="mb-0"><i class="bi bi-instagram"></i></h5>
+                </a>
+                <a href="#" class="btn rounded-circle btn-primary p-2">
+                    <h5 class="mb-0"><i class="bi bi-facebook"></i></h5>
+                </a>
+            </div>
         </div>
+        <span class="d-flex justify-content-center w-100 my-5"><span class="bg-white border-2 border" style="border-color: white !important; width: 80%;"></span></span>
+        <span class="d-flex justify-content-center">
+            <p class="text-white text-center">&copy; Copyright <?= date('Y'); ?>, All Rights Reserved by AirZenith</p>
+        </span>
     </div>
 </footer>

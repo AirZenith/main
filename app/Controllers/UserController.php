@@ -39,7 +39,11 @@ class UserController extends BaseController
                 $this->setUserSession($user);
             }
         }
-        return view('login');
+
+
+        echo view('top');
+        echo view('v_login');
+        echo view('bottom');
     }
 
     private function setUserSession($user)
@@ -84,7 +88,10 @@ class UserController extends BaseController
                 return redirect()->to(base_url('login'));
             }
         }
-        return view('register');
+
+        echo view('top');
+        echo view('v_register');
+        echo view('bottom');
     }
 
     public function logout()

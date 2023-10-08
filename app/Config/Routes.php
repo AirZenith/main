@@ -7,8 +7,8 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('/', 'Home::index');
-$routes->add('login', 'UserController::login', ['filter' => 'noAuth']);
-$routes->add('register', 'UserController::register', ['filter' => 'noAuth']);
+$routes->add('login', 'UserController::login');
+$routes->add('register', 'UserController::register');
 
 $routes->post('logout', 'UserController::logout', ['filter' => 'noAuth']);
 
