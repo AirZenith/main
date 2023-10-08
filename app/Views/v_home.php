@@ -86,7 +86,7 @@
 
 <section style="margin-top: 13vh;">
     <div class="container">
-        <a href="#" class="btn btn-success w-100 d-flex">EMIT L2 Data</a>
+        <a href="https://cmr.earthdata.nasa.gov/search/collections.json?doi=10.5067/EMIT/EMITL2ARFL.001" class="btn btn-success w-100 d-flex">EMIT L2A Data</a>
         <div class="row mt-5">
             <span class="d-flex px-lg-0">
                 <h2 class="border-bottom border-dark border-3">Upcoming Events</h2>
