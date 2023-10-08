@@ -34,7 +34,7 @@
                                 </span>
                             </div>
                             <div class="d-flex mt-auto">
-                                <a href="#" class="btn border-0 rounded text-white px-4" style="background-color: #15C626;">Do This Challenge</a>
+                                <a role="button" data-bs-toggle="modal" data-bs-target="#modal1" class="btn border-0 rounded text-white px-4" style="background-color: #15C626;">Do This Challenge</a>
                             </div>
                         </div>
 
@@ -60,7 +60,7 @@
                                 </span>
                             </div>
                             <div class="d-flex mt-auto">
-                                <a role="button" data-bs-toggle="modal" data-bs-target="#modal1" class="btn border-0 rounded text-white px-5" style="background-color: #15C626;">Do This Challenge</a>
+                                <a role="button" data-bs-toggle="modal" data-bs-target="#modal3" class="btn border-0 rounded text-white px-5" style="background-color: #15C626;">Do This Challenge</a>
                             </div>
                         </div>
 
@@ -104,6 +104,39 @@
                 <h1 class="modal-title fs-5" id="modal1text"></h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body border-0 d-flex flex-column gap-3">
+                <form action="" method="post">
+                    <h2 class="fw-bold text-center">Fill the form below to approve the challenge</h2>
+                    <div class="mb-3 mt-5">
+                        <input type="text" class="form-control shadow-sm" placeholder="Your Name">
+                    </div>
+                    <div class="mb-2 mt-4 d-flex flex-column gap-4">
+                        <p class="fw-bold text-center mb-0">Upload photos of your plants</p>
+                        <a href="#" class="btn rounded py-3 px-4 text-white" style="background-color: #0E451A;">Choose File</a>
+                        <span class="d-flex justify-content-center"><a href="#" class="btn btn-outline-success px-4 py-2">Sell Now</a></span>
+                    </div>
+                </form>
+                <hr class="mb-3">
+                <form action="" method="post" class="d-flex flex-column gap-3">
+                    <div class="mb-3">
+                        <input type="text" name="" class="form-control shadow-sm" id="" placeholder="Your Name">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-warning px-4 py-2 text-white">Buy Now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2text" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-4">
+            <div class="modal-header border-0">
+                <h1 class="modal-title fs-5" id="modal2text"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
             <form action="" method="post">
                 <div class="modal-body border-0 d-flex flex-column gap-4">
                     <h2 class="fw-bold text-center">Fill the form below to approve the challenge</h2>
@@ -123,11 +156,11 @@
     </div>
 </div>
 
-<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2text" aria-hidden="true">
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3text" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content p-4">
             <div class="modal-header border-0">
-                <h1 class="modal-title fs-5" id="modal2text"></h1>
+                <h1 class="modal-title fs-5" id="modal3text"></h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <form action="" method="post">
