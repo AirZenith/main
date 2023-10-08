@@ -25,10 +25,14 @@ class AqiController extends BaseController
         }
     }
 
+    /**
+     * Fetch user ip and search for his current location
+     * ?NOTE: idk if this is doxxing and legal tho
+     */
     public function getCurrentLocation()
     {
         $user_ip = getenv('REMOTE_ADDR');
-        $geo = json_decode(file_get_contents("http://ip-api.com/json/{$user_ip}"));
+        $geo = json_decode(file_get_contents("http://ip-api.com/json/$user_ip"));
 
         return $geo;
     }
@@ -108,7 +112,7 @@ class AqiController extends BaseController
     {
         $token = $this->weather_token;
         $city = $this->city_name;
-        $api_url = "http://api.weatherapi.com/v1/forecast.json?key={$token}&q={$city}";
+        $api_url = "http://api.weatherapi.com/v1/forecast.json?key=$token&q=$city";
         $response = file_get_contents($api_url);
         $data = json_decode($response, true);
 
