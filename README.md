@@ -1,4 +1,4 @@
-# AirZenith
+# Welcome to AirZenith main repository!
 
 ## What is AirZenith?
 
