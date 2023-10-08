@@ -85,7 +85,7 @@ class Home extends BaseController
                 Supported by Nadine Maulia (and almost everyone i know lol) \n
                 SpacePPTd by Daffa Dians (eventhough we're not using it[for now 😉]) \n
                 \n
-                Special thanks to nasa earth science division for the EMIT data (please make an api for us so we don't need to download all of it)
+                Special thanks to nasa earth science division for the EMIT data
             ";
         } else {
             echo '403 Access Forbidden';
