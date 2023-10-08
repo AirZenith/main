@@ -45,24 +45,4 @@ class Home extends BaseController
         echo view('footer', $link);
         echo view('bottom');
     }
-
-    public function learn()
-    {
-        $link['url'] = $this->url();
-        echo view('top');
-        echo view('navbar', $link);
-        echo view('v_challenges');
-        echo view('footer', $link);
-        echo view('bottom');
-    }
-
-    public function community()
-    {
-        $link['url'] = $this->url();
-        echo view('top');
-        echo view('navbar', $link);
-        echo view('v_challenges');
-        echo view('footer', $link);
-        echo view('bottom');
-    }
 }
