@@ -9,15 +9,20 @@ This app was made in [Codeigniter 4 framework](https://github.com/codeigniter4/C
 
 ## Installation & updates
 
-click the green code button on the top right and download it they way you want.
+click the green code button on the top right and download it the way you want.
 After that, you can run `composer update` to install the vendor folders
 
 ## Setup
 
 1.  Copy `env` to `.env` and tailor for your app, specifically the baseURL
 and any database settings.
-2. Create a WAQI api key from [aqicn.org](https://aqicn.org/data-platform/token/) and replace the first `YOUR_API_KEY` in `.env` file with your api key.
-3. Create a WeatherAPI api key from [WeatherAPI.com](https://www.weatherapi.com/signup.aspx) and replace the second `YOUR_API_KEY` in `.env` file with your api key.
+2. Run these code in your terminal
+   ```
+   php spark db:create user
+   php spark migrate
+   ```
+4. Create a WAQI api key from [aqicn.org](https://aqicn.org/data-platform/token/) and replace the value `YOUR_API_KEY` on `WAQI_TOKEN` variable in `.env` file with your api key.
+5. Create a WeatherAPI api key from [WeatherAPI.com](https://www.weatherapi.com/signup.aspx) and replace the value `YOUR_API_KEY` on `WEATHER_TOKEN` variable in `.env` file with your api key.
 
 ## Server Requirements
 
