@@ -2,7 +2,7 @@
     <div class="container d-flex flex-column gap-5">
         <div class="row">
             <div class="col-12">
-                <h1 class="display-3 fw-bold text-center text-dark">Hello, Good
+                <h1 class="display-3 fw-bold  text-dark">Hi, Good
                     <?php
                     $todeh = date('G');
                     if ($todeh >= 4 and $todeh <= 10) {
@@ -12,28 +12,29 @@
                     } elseif (($todeh > 17 and $todeh <= 23) || ($todeh >= 0 and $todeh < 4)) {
                         echo 'Evening';
                     }
-                    ?>
+                    ?>!
                 </h1>
+                <?= $message ?>
             </div>
         </div>
         <div class="row align-items-stretch justify-content-between hero gap-5 gap-xl-0">
             <a href="#" role="button" class="col-lg-7 col-12 text-dark text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalcuaca">
                 <div class="rounded p-4 shadow-lg" style="background-color: #E1E1E1; height: 100%;">
-                    <h5>Average Today's Air <br>Quality</h5>
-                    <h5 class="fw-bold">124 AQI</h5>
+                    <h5>Air Quality Right Now</h5>
+                    <h5 class="fw-bold"><?= $aqi ?> AQI</h5>
                     <canvas id="chartaqi"></canvas>
                 </div>
             </a>
             <a href="#" class="col-12 col-lg-5 text-dark text-decoration-none">
                 <div class="rounded p-4 shadow-lg d-flex flex-column" style="background-color: #E1E1E1; height: 100%;">
                     <span class="d-flex">
-                        <p class="fw-bold mb-1">Jakarta, Indonesia</p>
-                        <p class="ms-auto mb-1 fw-bold">05.00 PM</p>
+                        <p class="fw-bold mb-1"><?= $city ?>, <?= $country ?></p>
+                        <p class="ms-auto mb-1 fw-bold"><?= $time ?></p>
                     </span>
-                    <p>15 June 2023</p>
+                    <p><?= $date ?></p>
                     <div class="mt-auto">
-                        <h1 class="fw-bold display-2 mb-0">28°c</h1>
-                        <p class="fw-bold">32°c/26°c</p>
+                        <h1 class="fw-bold display-2 mb-0"><?= $tempC ?>°c</h1>
+                        <p class="fw-bold"><?= $tempC ?>°c | <?= $tempF ?>°F | uv <?= $uv ?> | humidity <?= $humidity ?></p>
                     </div>
                 </div>
             </a>
@@ -50,20 +51,22 @@
             </div>
             <div class="modal-body border-0 d-flex flex-column gap-4">
                 <h1 class="fw-bold text-center">Temperature</h1>
-                <h1 class="display-4 fw-bold text-center">35°C</h1>
+                <h1 class="display-4 fw-bold text-center"><?= $tempC ?>°C</h1>
                 <div class="py-5 px-4 d-flex justify-content-around rounded" style="background-color: #D8D8D8;">
-                    <?php for ($n = 1; $n <= 3; $n++) : ?>
-                        <div class="d-flex flex-column align-items-center fw-bolder">
-                            <h4 class="mb-4">PM2.5</h4>
-                            <h1 class="display-3">31</h1>
-                        </div>
-                    <?php endfor; ?>
+                    <div class="d-flex flex-column align-items-center fw-bolder">
+                        <h4 class="mb-4">PM2.5</h4>
+                        <h1 class="display-3"><?= $pm25 ?></h1>
+                    </div>
+                    <div class="d-flex flex-column align-items-center fw-bolder">
+                        <h4 class="mb-4">PM10</h4>
+                        <h1 class="display-3"><?= $pm10 ?></h1>
+                    </div>
                 </div>
             </div>
             <div class="modal-footer border-0 text-center mx-auto">
                 <span class="d-flex gap-2 fw-bold">
                     <i class="bi bi-geo-alt"></i>
-                    <p class="mb-0">Jakarta, Indonesia</p>
+                    <p class="mb-0"><?= $city ?>, <?= $country ?></p>
                 </span>
             </div>
         </div>
