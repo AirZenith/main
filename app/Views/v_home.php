@@ -20,8 +20,15 @@
         <div class="row align-items-stretch justify-content-between hero gap-5 gap-xl-0">
             <a href="#" role="button" class="col-lg-7 col-12 text-dark text-decoration-none" data-bs-toggle="modal" data-bs-target="#modalcuaca">
                 <div class="rounded p-4 shadow-lg" style="background-color: #E1E1E1; height: 100%;">
-                    <h5>Air Quality Right Now</h5>
-                    <h5 class="fw-bold"><?= $aqi ?> AQI</h5>
+                    <div class="d-flex justify-content-between">
+                        <div class="d-block">
+                            <h5>Air Quality Right Now</h5>
+                            <h5 class="fw-bold"><?= $aqi ?> AQI</h5>
+                        </div>
+                        <div class="d-block">
+                            More info click here 👈
+                        </div>
+                    </div>
                     <canvas id="chartaqi"></canvas>
                 </div>
             </a>
@@ -50,8 +57,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body border-0 d-flex flex-column gap-4">
-                <h1 class="fw-bold text-center">Temperature</h1>
-                <h1 class="display-4 fw-bold text-center"><?= $tempC ?>°C</h1>
+                <h1 class="fw-bold text-center">AQI</h1>
+                <h1 class="display-4 fw-bold text-center"><?= $aqi ?></h1>
                 <div class="py-5 px-4 d-flex justify-content-around rounded" style="background-color: #D8D8D8;">
                     <div class="d-flex flex-column align-items-center fw-bolder">
                         <h4 class="mb-4">PM2.5</h4>
@@ -60,6 +67,10 @@
                     <div class="d-flex flex-column align-items-center fw-bolder">
                         <h4 class="mb-4">PM10</h4>
                         <h1 class="display-3"><?= $pm10 ?></h1>
+                    </div>
+                    <div class="d-flex flex-column align-items-center fw-bolder">
+                        <h4 class="mb-4">Humidity</h4>
+                        <h1 class="display-3"><?= $humidity ?></h1>
                     </div>
                 </div>
             </div>
