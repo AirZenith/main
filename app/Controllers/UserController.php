@@ -87,7 +87,6 @@ class UserController extends BaseController
                 return redirect()->to(base_url('login'));
             }
         }
-
         echo view('top');
         echo view('v_register');
         echo view('bottom');

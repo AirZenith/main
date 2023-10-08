@@ -7,6 +7,12 @@ use CodeIgniter\Router\RouteCollection;
  */
 
 $routes->get('/', 'Home::index');
+$routes->get('/challenges', 'Home::challenges');
+$routes->get('/challenges/history', 'Home::history');
+$routes->get('/reward', 'Home::reward');
+$routes->get('/learn', 'Home::learn');
+$routes->get('/community', 'Home::community');
+
 $routes->add('/login', 'UserController::login', ['filter' => 'noauth']);
 $routes->add('/register', 'UserController::register', ['filter' => 'noauth']);
 $routes->post('/logout', 'UserController::logout', ['filter' => 'auth']);
