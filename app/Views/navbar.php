@@ -15,12 +15,6 @@
                 <a class="nav-link d-flex gap-2 <?= ($url == "reward") ? "active" : ''; ?>" href="<?= base_url('/reward'); ?>"><i class="bi bi-gift"></i>
                     <p class="mb-0">Reward</p>
                 </a>
-                <a class="nav-link d-flex gap-2 <?= ($url == "learn") ? "active" : ''; ?>" href="<?= base_url('/learn'); ?>"><i class="bi bi-book"></i>
-                    <p class="mb-0">Learn</p>
-                </a>
-                <a class="nav-link d-flex gap-2 <?= ($url == "community") ? "active" : ''; ?>" href="<?= base_url('/community'); ?>"><i class="bi bi-people"></i>
-                    <p class="mb-0">Community</p>
-                </a>
             </div>
             <div class="d-flex align-items-center ms-auto gap-2">
                 <a href="login" class="btn nav2 border-0 rounded px-4 text-white" style="background-color: #15C626;">Login</a>
