@@ -57,8 +57,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body border-0 d-flex flex-column gap-4">
-                <h1 class="fw-bold text-center">AQI</h1>
-                <h1 class="display-4 fw-bold text-center"><?= $aqi ?></h1>
+                <h1 class="fw-bold text-center">CO2</h1>
+                <h1 class="display-4 fw-bold text-center"><?= '300ppm/m' ?></h1>
                 <div class="py-5 px-4 d-flex justify-content-around rounded" style="background-color: #D8D8D8;">
                     <div class="d-flex flex-column align-items-center fw-bolder">
                         <h4 class="mb-4">PM2.5</h4>

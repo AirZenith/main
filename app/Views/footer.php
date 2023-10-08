@@ -3,11 +3,11 @@
         <div class="row justify-content-between align-items-center gap-4 gap-lg-0">
             <a href="#" class="d-flex col-lg-2 col-12 justify-content-center"><img src="img/Logo2.png" class="img-fluid pb-2" alt="" style="width: 205px;"></a>
             <div class="d-flex gap-5 col-lg-7 col-12 flex-lg-row flex-column text-center justify-content-around">
-                <a href="#" class="<?= ($url == "") ? 'text-decoration-underline' : 'text-decoration-none' ; ?> text-white">Home</a>
-                <a href="#" class="<?= ($url == "challenges") ? 'text-decoration-underline' : 'text-decoration-none' ; ?> text-white">Challenge</a>
-                <a href="#" class="<?= ($url == "reward") ? 'text-decoration-underline' : 'text-decoration-none' ; ?> text-white">Reward</a>
-                <a href="#" class="<?= ($url == "learn") ? 'text-decoration-underline' : 'text-decoration-none' ; ?> text-white">Learn</a>
-                <a href="#" class="<?= ($url == "community") ? 'text-decoration-underline' : 'text-decoration-none' ; ?> text-white">Community</a>
+                <a href="<?= base_url() ?>" class="<?= ($url == "") ? 'text-decoration-underline' : 'text-decoration-none'; ?> text-white">Home</a>
+                <a href="<?= base_url('challenges') ?>" class="<?= ($url == "challenges") ? 'text-decoration-underline' : 'text-decoration-none'; ?> text-white">Challenge</a>
+                <a href="<?= base_url('reward') ?>" class="<?= ($url == "reward") ? 'text-decoration-underline' : 'text-decoration-none'; ?> text-white">Reward</a>
+                <!-- <a href="#" class="<?= ($url == "learn") ? 'text-decoration-underline' : 'text-decoration-none'; ?> text-white">Learn</a>
+                <a href="#" class="<?= ($url == "community") ? 'text-decoration-underline' : 'text-decoration-none'; ?> text-white">Community</a> -->
             </div>
             <div class="d-flex gap-3 col-lg-2 col-12 justify-content-center">
                 <a href="#" class="btn rounded-circle btn-warning text-white p-2">

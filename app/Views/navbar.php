@@ -18,7 +18,7 @@
             </div>
             <div class="d-flex align-items-center ms-auto gap-2">
                 <a href="login" class="btn nav2 border-0 rounded px-4 text-white" style="background-color: #15C626;">Login</a>
-                <a href="register" class="btn nav2 border-0 rounded px-4" style="background-color: #F9F871;">Sign In</a>
+                <a href="register" class="btn nav2 border-0 rounded px-4" style="background-color: #F9F871;">Sign Up</a>
                 <?php if (session()->get('login') == true) : ?>
                     <div class="dropdown">
                         <a role="button" class="dropdown-toggle text-dark d-flex align-items-center text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">

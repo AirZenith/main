@@ -122,7 +122,7 @@
                         <input type="text" name="" class="form-control shadow-sm" id="" placeholder="Your Name">
                     </div>
                     <div class="d-flex justify-content-center">
-                        <a href="#" class="btn btn-warning px-4 py-2 text-white">Buy Now</a>
+                        <a target="_blank" href="https://shopee.co.id/search?keyword=pohon%20bougenville" class="btn btn-warning px-4 py-2 text-white">Buy Now</a>
                     </div>
                 </form>
             </div>
