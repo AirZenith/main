@@ -4,11 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
     "content-hash": "0f8b55e2ef8a59cf6bf42222e94da0e2",
-=======
-    "content-hash": "0aee89044c0e5947da04b33a832735fe",
->>>>>>> 23f37b36481c590a07a1cfe9c6e9790a113db12f
     "packages": [
         {
             "name": "azuyalabs/waqi",
@@ -3246,7 +3242,6 @@
             "time": "2020-09-28T06:39:44+00:00"
         },
         {
-<<<<<<< HEAD
             "name": "symfony/deprecation-contracts",
             "version": "v3.3.0",
             "source": {
@@ -3314,8 +3309,6 @@
             "time": "2023-05-23T14:45:45+00:00"
         },
         {
-=======
->>>>>>> 23f37b36481c590a07a1cfe9c6e9790a113db12f
             "name": "theseer/tokenizer",
             "version": "1.2.1",
             "source": {
