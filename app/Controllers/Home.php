@@ -35,7 +35,7 @@ class Home extends BaseController
         if ($data['aqi'] > 100) {
             $data['message'] = '<span class="fs-4">The air is kinda polluted right now.</span><span class=" text-danger fs-4"> You should use a mask.</span>';
         } else {
-            $data['message'] = '<span class="fs-4 text-success">The air is fine 👍</span>';
+            $data['message'] = '<span class="fs-4 text-success">The air is good, Have a nice day 👍</span>';
         }
 
         echo view('top');
@@ -73,5 +73,22 @@ class Home extends BaseController
         echo view('v_reward');
         echo view('footer', $link);
         echo view('bottom');
+    }
+
+    public function appreciatingYouAppreciatingMe($password)
+    {
+        if ($password == '🐱‍💻') {
+            echo " 
+                Sponsored by goDaddy(eventhough we're not using it 😁) & canva \n
+                Spoonfeed by Alvaro Muyassar \n
+                Spokeneed by Arief Ammar \n
+                Supported by Nadine Maulia (and almost everyone i know lol) \n
+                SpacePPTd by Daffa Dians (eventhough we're not using it[for now 😉]) \n
+                \n
+                Special thanks to nasa earth science division for the EMIT data (please make an api for us so we don't need to download all of it)
+            ";
+        } else {
+            echo '403 Access Forbidden';
+        }
     }
 }

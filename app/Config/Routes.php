@@ -27,6 +27,8 @@ $routes->get('/current-location', 'AqiController::getCurrentLocation');
 $routes->get('/temp', 'AqiController::getCurrentTemp');
 $routes->get('/weather-forecast', 'AqiController::getForecast');
 
+$routes->get('appreciatingYouAppreciatingMe/(:any)', 'Home::appreciatingYouAppreciatingMe/$1');
+
 $routes->group('test', function ($routes) {
     $routes->get('me', 'AqiController::getCurrentLocation');
 });
